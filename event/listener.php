@@ -1,7 +1,7 @@
 <?php
 /**
 * phpBB Extension - marttiphpbb customcode
-* @copyright (c) 2014 - 2020 marttiphpbb <info@martti.be>
+* @copyright (c) 2014 - 2018 marttiphpbb <info@martti.be>
 * @license GNU General Public License, version 2 (GPL-2.0)
 */
 
@@ -54,7 +54,7 @@ class listener implements EventSubscriberInterface
 		$this->php_ext = $php_ext;
 	}
 
-	static public function getSubscribedEvents():array
+	static public function getSubscribedEvents()
 	{
 		return [
 			'core.page_header'		=> 'core_page_header',
@@ -64,24 +64,18 @@ class listener implements EventSubscriberInterface
 		];
 	}
 
-	public function core_page_header(event $event):void
+	public function core_page_header(event $event)
 	{
 		if ($this->config['tpl_allow_php'])
 		{
 			return;
 		}
 
-		$custom_code_dir = $this->phpbb_root_path . cnst::DIR;
-
-		$this->loader->addSafeDirectory($custom_code_dir);
-		$this->loader->addPath($custom_code_dir, 'store_marttiphpbb_customcode');
-
-//		$this->template->set_style(['store/customcode', 'styles']);
-
-		$this->template->assign_var('CUSTOMCODE_PATH', '@store_marttiphpbb_customcode/');
+		$this->loader->addSafeDirectory($this->phpbb_root_path . cnst::DIR);
+		$this->template->assign_var('CUSTOMCODE_PATH', cnst::PATH . '/');
 	}
 
-	public function core_append_sid(event $event):void
+	public function core_append_sid(event $event)
 	{
 		$url = $event['url'];
 		$params = $event['params'];
@@ -129,7 +123,7 @@ class listener implements EventSubscriberInterface
 		}
 	}
 
-	public function core_twig_environment_render_template_before(event $event):void
+	public function core_twig_environment_render_template_before(event $event)
 	{
 		global $phpbb_admin_path; // core.admin_path doesn't seem to exist.
 

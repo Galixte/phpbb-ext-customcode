@@ -4,6 +4,8 @@
 * phpBB Extension - marttiphpbb customcode
 * @copyright (c) 2014 - 2018 marttiphpbb <info@martti.be>
 * @license GNU General Public License, version 2 (GPL-2.0)
+*
+* Translated By : Bassel Taha Alhitary - www.alhitary.net
 */
 
 if (!defined('IN_PHPBB'))
@@ -18,8 +20,8 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, [
 
-	'ACP_CUSTOMCODE'							=> 'Custom Code',
-	'ACP_CUSTOMCODE_EDIT'						=> 'Edit',
-	'ACP_CUSTOMCODE_FILES'						=> 'Files',
+	'ACP_CUSTOMCODE'							=> 'إنشاء الأكواد',
+	'ACP_CUSTOMCODE_EDIT'						=> 'التعديل',
+	'ACP_CUSTOMCODE_FILES'						=> 'الملفات',
 
 ]);

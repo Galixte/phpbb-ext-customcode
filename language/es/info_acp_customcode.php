@@ -18,8 +18,8 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, [
 
-	'ACP_CUSTOMCODE'							=> 'Custom Code',
-	'ACP_CUSTOMCODE_EDIT'						=> 'Edit',
-	'ACP_CUSTOMCODE_FILES'						=> 'Files',
+	'ACP_CUSTOMCODE'							=> 'Código personalizado',
+	'ACP_CUSTOMCODE_EDIT'						=> 'Editar',
+	'ACP_CUSTOMCODE_FILES'						=> 'Archivos',
 
 ]);

@@ -1,12 +1,12 @@
 {
 	"name": "marttiphpbb/customcode",
 	"type": "phpbb-extension",
-	"description": "Custom Code Extension for phpBB 3.3",
+	"description": "Custom Code Extension for phpBB 3.2",
 	"homepage": "https://github.com/marttiphpbb/phpbb-ext-customcode",
-	"version": "3.1.0",
-	"time": "2020-02-16",
+	"version": "2.0.2",
+	"time": "2018-06-19",
 	"keywords": ["phpbb", "extension", "template", "custom"],
-	"license": "GPL-2.0-only",
+	"license": "GPL-2.0",
 	"authors": [{
 			"name": "martti",
 			"email": "info@martti.be",
@@ -14,7 +14,7 @@
 			"role": "Developer"
 		}],
 	"require": {
-		"php": ">=7.1"
+		"php": ">=7"
 	},
 	"require-dev": {
 		"phpbb/epv": "dev-master"
@@ -22,7 +22,7 @@
 	"extra": {
 		"display-name": "Custom Code",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.3.0"
+			"phpbb/phpbb": ">=3.2.1"
 		},
 		"version-check": {
 			"host": "marttiphpbb.github.io",

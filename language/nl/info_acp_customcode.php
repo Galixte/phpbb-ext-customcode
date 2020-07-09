@@ -1,5 +1,4 @@
 <?php
-
 /**
 * phpBB Extension - marttiphpbb customcode
 * @copyright (c) 2014 - 2018 marttiphpbb <info@martti.be>
@@ -18,8 +17,8 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, [
 
-	'ACP_CUSTOMCODE'							=> 'Custom Code',
-	'ACP_CUSTOMCODE_EDIT'						=> 'Edit',
-	'ACP_CUSTOMCODE_FILES'						=> 'Files',
+	'ACP_CUSTOMCODE'							=> 'Aangepaste Code',
+	'ACP_CUSTOMCODE_EDIT'						=> 'Bewerk',
+	'ACP_CUSTOMCODE_FILES'						=> 'Bestanden',
 
 ]);
